@@ -11,6 +11,7 @@ const productSchema = new mongoose.Schema({
     rate: { type: Number, required: true },
     count: { type: Number, required: true },
   },
+  isDeleted: { type: Boolean, default: false},
 });
 
 const Product = mongoose.model('Product', productSchema);
